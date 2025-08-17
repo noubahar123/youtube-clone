@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* hide scrollbars on chip strip (already used) */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* prevent body scroll when mobile drawer open */
+.no-scroll { overflow: hidden; }
+
+/* desktop collapse behavior */
+body.sidebar-collapsed .sidebar-label { display: none; }
+body.sidebar-collapsed .sidebar-fixed { width: 4.5rem; } /* 72px */
